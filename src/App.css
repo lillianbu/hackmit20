@@ -1,5 +1,6 @@
 .App {
-  text-align: center;
+ /* text-align: center;*/
+ background-color: black;
 }
 
 .App-logo {
@@ -35,4 +36,26 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.carousel-container {
+  margin-top: 100px;
+}
+
+.card-container {
+  display: block;
+  width: 500px;
+  height: 500px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: white;
+  border-radius: 20px;
+  background-color: white;
+}
+
+img {
+  height: auto; 
+  width: auto; 
+  max-width: 300px; 
+  max-height: 300px;
 }
