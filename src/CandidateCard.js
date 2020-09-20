@@ -17,8 +17,10 @@ export default class CandidateCard extends Component {
         <div className="break"></div>
         <div className="topic-container">
           <p className="topic-title">average position</p>
-          <div className="avg-position-slider-container">
+            <div className="avg-lean-container">
+            <a>left</a>
             <Slider candLeaning={this.props.avgLean}></Slider>
+            <a>right</a>
           </div>
         </div>
         <div className="select-text">

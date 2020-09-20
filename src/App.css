@@ -290,7 +290,7 @@ a.text-link {
 }
 
 .question-container {
-  overflow:scroll;
+  /* overflow:scroll; */
 }
 
 .avg-lean-container {
