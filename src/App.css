@@ -240,3 +240,46 @@ a {
   justify-content: space-between;
   margin: 10px;
 }
+
+.header {
+  width: 100%;
+}
+
+.logo {
+  width: 200px;
+  margin: 20px 30px;
+}
+
+.section-title {
+  width: 100%;
+  margin: 50px 80px 0px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.about-section {
+  /* width: 100%; */
+  margin: 50px 16vw;
+  line-height: 1.7;
+}
+
+a {
+  text-decoration: none;
+  color: #1193BC;
+  font-weight: 600;
+}
+
+.avocado-logo {
+  width: 120px;
+  margin-bottom: 10px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 100px;
+  text-align: center;
+  line-height: 1.7;
+}

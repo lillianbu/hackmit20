@@ -13,6 +13,7 @@ class Slider extends Component {
             <div>
                 {this.props.selectCategory ? (<a onClick={() => this.props.selectCategory(this.props.categoryTitle)} className="topic-title">{this.props.categoryTitle}</a>) : null}
                 <div className="avg-position-slider-container">
+                    <p className="spectrum-label">left</p>
                     <div className={`rectangle ${leaning === 0 ? "centered" : ""}`}>
                         { leaning === 0 
                             ? (
@@ -21,6 +22,7 @@ class Slider extends Component {
                                 (<div className={`leaning ${side}`} style={{ width: `${Math.abs(leaning)*75 + 'px'}`}} ></div> )
                             }
                     </div>
+                    <p className="spectrum-label">right</p>
                 </div>
             </div>
         );
