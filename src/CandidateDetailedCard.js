@@ -21,7 +21,7 @@ export default class CandidateDetailedCard extends Component {
           <a>right</a>
           <div className="break"></div>
         </div>
-        <div class="vl"></div>
+        <div className="vl"></div>
         {/* <div>
           <Slider candLeaning={this.props.candLeaning} detailedCard={true}></Slider>
         </div> */}
