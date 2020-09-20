@@ -154,11 +154,171 @@
           }
         ]
       },
-      "Environment": "6,7",
-      "Elections": "4,6",
-      "Economy": "3,7",
-      "Domestic Policy": "5,9",
-      "Education": "5,6"
+      "Environment": {
+        "score": "6,7",
+        "questions" : [
+          {
+            "question":"Should the US Enforce a Carbon Tax?",
+            "response":"Yes"
+          },
+          {
+            "question":"Should the US Expand Fossil Fuel Extraction on Public Land?",
+            "response":"No"
+          },
+          {
+            "question":"Should Fracking Be Allowed?",
+            "response":"Yes"
+          },
+          {
+            "question":"Should the US Adopt a Climate Change Plan such as the Green New Deal?",
+            "response":"Yes"
+          },
+          {
+            "question":"Should the Keystone XL Pipeline Be Built?",
+            "response":"No"
+          },
+          {
+            "question":"Should the US Expand Its Use of Nuclear Power?",
+            "response":"Yes"
+          },
+          {
+            "question":"Should the US Rejoin the Paris Climate Agreement?",
+            "response":"Yes"
+          }
+        ]
+      },
+      "Elections": {
+        "score": "4,6",
+        "questions" : [
+          {
+            "question":"Should Election Day Be a National Holiday?",
+            "response":"Unknown"
+          },
+          {
+            "question":"Should the US Abolish the Electoral College?",
+            "response":"Unknown"
+          },
+          {
+            "question":"Should Former Felons Be Allowed to Vote?",
+            "response":"Yes"
+          },
+          {
+            "question":"Should 2020 Presidential Election Candidates Accept Support from Super PACs?",
+            "response":"NC"
+          },
+          {
+            "question":"Should the US Expand Vote-by-Mail?",
+            "response":"Yes"
+          },
+          {
+            "question":"Should Voters Be Required to Show Photo Identification in Order to Vote?",
+            "response":"No"
+          }
+        ]
+      },
+      "Economy": {
+        "score": "3,7",
+        "questions" : [
+          {
+            "question":"Should the US Economy Be Shut Down again during the COVID-19 (Coronavirus) Pandemic if Recommended by Scientists?",
+            "response":"Yes"
+          },
+          {
+            "question":"Should the Federal Government Pay Reparations to the Descendants of Slaves?",
+            "response":"NC"
+          },
+          {
+            "question":"Should Federal Taxes Be Increased?",
+            "response":"Yes"
+          },
+          {
+            "question":"Should the Federal Minimum Wage Be Increased?",
+            "response":"Yes"
+          },
+          {
+            "question":"Should Federal Welfare Benefits Have Work Requirements?",
+            "response":"NC"
+          },
+          {
+            "question":"Should the US Implement a Universal Basic Income (UBI)?",
+            "response":"No"
+          },
+          {
+            "question":"Should the US Implement a Wealth Tax?",
+            "response":"No"
+          }
+        ]
+      },
+      "Domestic Policy": {
+        "score": "5,9",
+        "questions" : [
+          {
+            "question":"Should Confederate Statues Be Taken Down?",
+            "response":"Yes"
+          },
+          {
+            "question":"Should the District of Columbia Be Given Statehood?",
+            "response":"Yes"
+          },
+          {
+            "question":"Should the Federal Government Adopt Net Neutrality Rules?",
+            "response":"Unknown"
+          },
+          {
+            "question":"Should the Federal Government Mandate Paid Family and Medical Leave for All Americans?",
+            "response":"Yes"
+          },
+          {
+            "question":"Should Public Sector Employees Have the Right to Unionize?",
+            "response":"Yes"
+          },
+          {
+            "question":"Should Puerto Rico Be Given Statehood?",
+            "response":"NC"
+          },
+          {
+            "question":"Should Recreational Marijuana Be Legal Federally?",
+            "response":"No"
+          },
+          {
+            "question":"Should the Government Regulate Social Media Sites to Prevent Fake News and Misinformation?",
+            "response":"Yes"
+          },
+          {
+            "question":"Should the Federal Government Provide Universal Childcare?",
+            "response":"No"
+          }
+        ]
+      },
+      "Education": {
+        "score": "5,6",
+        "questions" : [
+          {
+            "question":"Should Schools Reopen during the COVID-19 (Coronavirus) Pandemic?",
+            "response":"Yes"
+          },
+          {
+            "question":"Should For-Profit Charter Schools Receive Federal Funding?",
+            "response":"No"
+          },
+          {
+            "question":"Should Schools Be Gun-Free Zones?",
+            "response":"Yes"
+          },
+          {
+            "question":"Should the Federal Funding to Historically Black Universities and Colleges (HBCUs) Be Increased?",
+            "response":"Yes"
+          },
+          {
+            "question":"Should Student Loan Debt Be Forgiven?",
+            "response":"Yes"
+          },
+          {
+            "question":"Should Public College Be Tuition-Free?",
+            "response":"Yes"
+          }
+        ]
+      }
     }, 
     "trump": {
       "Crime & Justice": {
@@ -314,11 +474,171 @@
           }
         ]
       },
-      "Environment": "2,7",
-      "Elections": "0,6",
-      "Economy": "0,7",
-      "Domestic Policy": "2,9",
-      "Education": "1,6"
+      "Environment": {
+        "score": "2,7",
+        "questions" : [
+          {
+            "question":"Should the US Enforce a Carbon Tax?",
+            "response":"NC"
+          },
+          {
+            "question":"Should the US Expand Fossil Fuel Extraction on Public Land?",
+            "response":"Yes"
+          },
+          {
+            "question":"Should Fracking Be Allowed?",
+            "response":"Yes"
+          },
+          {
+            "question":"Should the US Adopt a Climate Change Plan such as the Green New Deal?",
+            "response":"No"
+          },
+          {
+            "question":"Should the Keystone XL Pipeline Be Built?",
+            "response":"Yes"
+          },
+          {
+            "question":"Should the US Expand Its Use of Nuclear Power?",
+            "response":"Yes"
+          },
+          {
+            "question":"Should the US Rejoin the Paris Climate Agreement?",
+            "response":"No"
+          }
+        ]
+      },
+      "Elections": {
+        "score": "0,6",
+        "questions" : [
+          {
+            "question":"Should Election Day Be a National Holiday?",
+            "response":"Unknown"
+          },
+          {
+            "question":"Should the US Abolish the Electoral College?",
+            "response":"No"
+          },
+          {
+            "question":"Should Former Felons Be Allowed to Vote?",
+            "response":"NC"
+          },
+          {
+            "question":"Should 2020 Presidential Election Candidates Accept Support from Super PACs?",
+            "response":"Yes"
+          },
+          {
+            "question":"Should the US Expand Vote-by-Mail?",
+            "response":"No"
+          },
+          {
+            "question":"Should Voters Be Required to Show Photo Identification in Order to Vote?",
+            "response":"Yes"
+          }
+        ]
+      },
+      "Economy": {
+        "score": "0,7",
+        "questions" : [
+          {
+            "question":"Should the US Economy Be Shut Down again during the COVID-19 (Coronavirus) Pandemic if Recommended by Scientists?",
+            "response":"No"
+          },
+          {
+            "question":"Should the Federal Government Pay Reparations to the Descendants of Slaves?",
+            "response":"No"
+          },
+          {
+            "question":"Should Federal Taxes Be Increased?",
+            "response":"No"
+          },
+          {
+            "question":"Should the Federal Minimum Wage Be Increased?",
+            "response":"No"
+          },
+          {
+            "question":"Should Federal Welfare Benefits Have Work Requirements?",
+            "response":"Yes"
+          },
+          {
+            "question":"Should the US Implement a Universal Basic Income (UBI)?",
+            "response":"Unknown"
+          },
+          {
+            "question":"Should the US Implement a Wealth Tax?",
+            "response":"No"
+          }
+        ]
+      },
+      "Domestic Policy": {
+        "score": "2,9",
+        "questions" : [
+          {
+            "question":"Should Confederate Statues Be Taken Down?",
+            "response":"No"
+          },
+          {
+            "question":"Should the District of Columbia Be Given Statehood?",
+            "response":"No"
+          },
+          {
+            "question":"Should the Federal Government Adopt Net Neutrality Rules?",
+            "response":"No"
+          },
+          {
+            "question":"Should the Federal Government Mandate Paid Family and Medical Leave for All Americans?",
+            "response":"Yes"
+          },
+          {
+            "question":"Should Public Sector Employees Have the Right to Unionize?",
+            "response":"No"
+          },
+          {
+            "question":"Should Puerto Rico Be Given Statehood?",
+            "response":"No"
+          },
+          {
+            "question":"Should Recreational Marijuana Be Legal Federally?",
+            "response":"NC"
+          },
+          {
+            "question":"Should the Government Regulate Social Media Sites to Prevent Fake News and Misinformation?",
+            "response":"Yes"
+          },
+          {
+            "question":"Should the Federal Government Provide Universal Childcare?",
+            "response":"No"
+          }
+        ]
+      },
+      "Education": {
+        "score": "1,6",
+        "questions" : [
+          {
+            "question":"Should Schools Reopen during the COVID-19 (Coronavirus) Pandemic?",
+            "response":"Yes"
+          },
+          {
+            "question":"Should For-Profit Charter Schools Receive Federal Funding?",
+            "response":"Yes"
+          },
+          {
+            "question":"Should Schools Be Gun-Free Zones?",
+            "response":"No"
+          },
+          {
+            "question":"Should the Federal Funding to Historically Black Universities and Colleges (HBCUs) Be Increased?",
+            "response":"Yes"
+          },
+          {
+            "question":"Should Student Loan Debt Be Forgiven?",
+            "response":"NC"
+          },
+          {
+            "question":"Should Public College Be Tuition-Free?",
+            "response":"NC"
+          }
+        ]
+      }
     },
       "jorgensen": {
       "Crime & Justice": {
@@ -474,11 +794,171 @@
           }
         ]
       },
-      "Environment": "1,7",
-      "Elections": "1,6",
-      "Economy": "0,7",
-      "Domestic Policy": "2,9",
-      "Education": "1,6"
+      "Environment": {
+        "score": "1,7",
+        "questions" : [
+          {
+            "question":"Should the US Enforce a Carbon Tax?",
+            "response":"No"
+          },
+          {
+            "question":"Should the US Expand Fossil Fuel Extraction on Public Land?",
+            "response":"NC"
+          },
+          {
+            "question":"Should Fracking Be Allowed?",
+            "response":"Yes"
+          },
+          {
+            "question":"Should the US Adopt a Climate Change Plan such as the Green New Deal?",
+            "response":"No"
+          },
+          {
+            "question":"Should the Keystone XL Pipeline Be Built?",
+            "response":"NC"
+          },
+          {
+            "question":"Should the US Expand Its Use of Nuclear Power?",
+            "response":"Yes"
+          },
+          {
+            "question":"Should the US Rejoin the Paris Climate Agreement?",
+            "response":"No"
+          }
+        ]
+      },
+      "Elections": {
+        "score": "1,6",
+        "questions" : [
+          {
+            "question":"Should Election Day Be a National Holiday?",
+            "response":"NC"
+          },
+          {
+            "question":"Should the US Abolish the Electoral College?",
+            "response":"No"
+          },
+          {
+            "question":"Should Former Felons Be Allowed to Vote?",
+            "response":"Yes"
+          },
+          {
+            "question":"Should 2020 Presidential Election Candidates Accept Support from Super PACs?",
+            "response":"NC"
+          },
+          {
+            "question":"Should the US Expand Vote-by-Mail?",
+            "response":"NC"
+          },
+          {
+            "question":"Should Voters Be Required to Show Photo Identification in Order to Vote?",
+            "response":"NC"
+          }
+        ]
+      },
+      "Economy": {
+        "score": "0,7",
+        "questions" : [
+          {
+            "question":"Should the US Economy Be Shut Down again during the COVID-19 (Coronavirus) Pandemic if Recommended by Scientists?",
+            "response":"No"
+          },
+          {
+            "question":"Should the Federal Government Pay Reparations to the Descendants of Slaves?",
+            "response":"No"
+          },
+          {
+            "question":"Should Federal Taxes Be Increased?",
+            "response":"No"
+          },
+          {
+            "question":"Should the Federal Minimum Wage Be Increased?",
+            "response":"No"
+          },
+          {
+            "question":"Should Federal Welfare Benefits Have Work Requirements?",
+            "response":"Yes"
+          },
+          {
+            "question":"Should the US Implement a Universal Basic Income (UBI)?",
+            "response":"No"
+          },
+          {
+            "question":"Should the US Implement a Wealth Tax?",
+            "response":"No"
+          }
+        ]
+      },
+      "Domestic Policy": {
+        "score": "2,9",
+        "questions" : [
+          {
+            "question":"Should Confederate Statues Be Taken Down?",
+            "response":"Yes"
+          },
+          {
+            "question":"Should the District of Columbia Be Given Statehood?",
+            "response":"NC"
+          },
+          {
+            "question":"Should the Federal Government Adopt Net Neutrality Rules?",
+            "response":"No"
+          },
+          {
+            "question":"Should the Federal Government Mandate Paid Family and Medical Leave for All Americans?",
+            "response":"No"
+          },
+          {
+            "question":"Should Public Sector Employees Have the Right to Unionize?",
+            "response":"No"
+          },
+          {
+            "question":"Should Puerto Rico Be Given Statehood?",
+            "response":"Unknown"
+          },
+          {
+            "question":"Should Recreational Marijuana Be Legal Federally?",
+            "response":"Yes"
+          },
+          {
+            "question":"Should the Government Regulate Social Media Sites to Prevent Fake News and Misinformation?",
+            "response":"No"
+          },
+          {
+            "question":"Should the Federal Government Provide Universal Childcare?",
+            "response":"No"
+          }
+        ]
+      },
+      "Education": {
+        "score": "1,6",
+        "questions" : [
+          {
+            "question":"Should Schools Reopen during the COVID-19 (Coronavirus) Pandemic?",
+            "response":"NC"
+          },
+          {
+            "question":"Should For-Profit Charter Schools Receive Federal Funding?",
+            "response":"No"
+          },
+          {
+            "question":"Should Schools Be Gun-Free Zones?",
+            "response":"No"
+          },
+          {
+            "question":"Should the Federal Funding to Historically Black Universities and Colleges (HBCUs) Be Increased?",
+            "response":"No"
+          },
+          {
+            "question":"Should Student Loan Debt Be Forgiven?",
+            "response":"No"
+          },
+          {
+            "question":"Should Public College Be Tuition-Free?",
+            "response":"No"
+          }
+        ]
+      }
     },
       "hawkins": {
       "Crime & Justice": {
@@ -634,11 +1114,171 @@
           }
         ]
       },
-      "Environment": "6,7",
-      "Elections": "6,6",
-      "Economy": "4,7",
-      "Domestic Policy": "6,9",
-      "Education": "3,6"
+      "Environment": {
+        "score": "6,7",
+        "questions" : [
+          {
+            "question":"Should the US Enforce a Carbon Tax?",
+            "response":"Yes"
+          },
+          {
+            "question":"Should the US Expand Fossil Fuel Extraction on Public Land?",
+            "response":"No"
+          },
+          {
+            "question":"Should Fracking Be Allowed?",
+            "response":"No"
+          },
+          {
+            "question":"Should the US Adopt a Climate Change Plan such as the Green New Deal?",
+            "response":"Yes"
+          },
+          {
+            "question":"Should the Keystone XL Pipeline Be Built?",
+            "response":"No"
+          },
+          {
+            "question":"Should the US Expand Its Use of Nuclear Power?",
+            "response":"No"
+          },
+          {
+            "question":"Should the US Rejoin the Paris Climate Agreement?",
+            "response":"Yes"
+          }
+        ]
+      },
+      "Elections": {
+        "score": "6,6",
+        "questions" : [
+          {
+            "question":"Should Election Day Be a National Holiday?",
+            "response":"Yes"
+          },
+          {
+            "question":"Should the US Abolish the Electoral College?",
+            "response":"Yes"
+          },
+          {
+            "question":"Should Former Felons Be Allowed to Vote?",
+            "response":"Yes"
+          },
+          {
+            "question":"Should 2020 Presidential Election Candidates Accept Support from Super PACs?",
+            "response":"No"
+          },
+          {
+            "question":"Should the US Expand Vote-by-Mail?",
+            "response":"Yes"
+          },
+          {
+            "question":"Should Voters Be Required to Show Photo Identification in Order to Vote?",
+            "response":"No"
+          }
+        ]
+      },
+      "Economy": {
+        "score": "4,7",
+        "questions" : [
+          {
+            "question":"Should the US Economy Be Shut Down again during the COVID-19 (Coronavirus) Pandemic if Recommended by Scientists?",
+            "response":"Unknown"
+          },
+          {
+            "question":"Should the Federal Government Pay Reparations to the Descendants of Slaves?",
+            "response":"Yes"
+          },
+          {
+            "question":"Should Federal Taxes Be Increased?",
+            "response":"Yes"
+          },
+          {
+            "question":"Should the Federal Minimum Wage Be Increased?",
+            "response":"Yes"
+          },
+          {
+            "question":"Should Federal Welfare Benefits Have Work Requirements?",
+            "response":"NC"
+          },
+          {
+            "question":"Should the US Implement a Universal Basic Income (UBI)?",
+            "response":"No"
+          },
+          {
+            "question":"Should the US Implement a Wealth Tax?",
+            "response":"Yes"
+          }
+        ]
+      },
+      "Domestic Policy": {
+        "score": "6,9",
+        "questions" : [
+          {
+            "question":"Should Confederate Statues Be Taken Down?",
+            "response":"Unknown"
+          },
+          {
+            "question":"Should the District of Columbia Be Given Statehood?",
+            "response":"Yes"
+          },
+          {
+            "question":"Should the Federal Government Adopt Net Neutrality Rules?",
+            "response":"Yes"
+          },
+          {
+            "question":"Should the Federal Government Mandate Paid Family and Medical Leave for All Americans?",
+            "response":"Yes"
+          },
+          {
+            "question":"Should Public Sector Employees Have the Right to Unionize?",
+            "response":"Yes"
+          },
+          {
+            "question":"Should Puerto Rico Be Given Statehood?",
+            "response":"NC"
+          },
+          {
+            "question":"Should Recreational Marijuana Be Legal Federally?",
+            "response":"Yes"
+          },
+          {
+            "question":"Should the Government Regulate Social Media Sites to Prevent Fake News and Misinformation?",
+            "response":"No"
+          },
+          {
+            "question":"Should the Federal Government Provide Universal Childcare?",
+            "response":"Yes"
+          }
+        ]
+      },
+      "Education": {
+        "score": "3,6",
+        "questions" : [
+          {
+            "question":"Should Schools Reopen during the COVID-19 (Coronavirus) Pandemic?",
+            "response":"Unknown"
+          },
+          {
+            "question":"Should For-Profit Charter Schools Receive Federal Funding?",
+            "response":"No"
+          },
+          {
+            "question":"Should Schools Be Gun-Free Zones?",
+            "response":"Unknown"
+          },
+          {
+            "question":"Should the Federal Funding to Historically Black Universities and Colleges (HBCUs) Be Increased?",
+            "response":"Yes"
+          },
+          {
+            "question":"Should Student Loan Debt Be Forgiven?",
+            "response":"NC"
+          },
+          {
+            "question":"Should Public College Be Tuition-Free?",
+            "response":"Yes"
+          }
+        ]
+      }
     }
   }
 }
