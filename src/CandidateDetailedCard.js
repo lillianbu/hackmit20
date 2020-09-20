@@ -26,23 +26,27 @@ export default class CandidateDetailedCard extends Component {
           </div>
           <div className="break"></div>
           <a>average position</a>
-          <a>left</a>
-          <Slider candLeaning={this.props.avgLean}></Slider>
-          {/* <Slider candLeaning={this.props.candLeaning} detailedCard={true}></Slider> */}
-          <a>right</a>
+          <div className="avg-lean-container">
+            <a>left</a>
+            <Slider candLeaning={this.props.avgLean}></Slider>
+            {/* <Slider candLeaning={this.props.candLeaning} detailedCard={true}></Slider> */}
+            <a>right</a>
+          </div>
           {this.props.leanSliders}
           <div className="break"></div>
         </div>
         <div className="vl"></div>
         <div className="detailed-card-right">
           <h1>{this.props.selectedCategory}</h1>
-          {this.props.selectedCategory !== '' 
-            ? questionDivs
-            : (
-                <div>
-                  Please select a category 
-                </div>
-          )}
+          <div className="question-container">
+            {this.props.selectedCategory !== '' 
+              ? questionDivs
+              : (
+                  <div>
+                    Please select a category 
+                  </div>
+            )}
+          </div>
         </div>
       </span>
     )

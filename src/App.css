@@ -283,3 +283,13 @@ a {
   text-align: center;
   line-height: 1.7;
 }
+
+.question-container {
+  overflow:scroll;
+}
+
+.avg-lean-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
