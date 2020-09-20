@@ -1,11 +1,159 @@
 {
   "Candidates": {
     "biden": {
-      "Crime & Justice": "6,7",
-      "LGBTQ+": "5,5",
-      "Immigration": "4,5",
-      "Healthcare": "7,8",
-      "Foreign Policy": "7,7",
+      "Crime & Justice": {
+        "score": "6,7",
+        "questions": [
+          {
+            "question":"Should Police Departments Be Defunded, if Not Abolished?",
+            "response":"No"
+          },
+          {
+            "question":"Should the US Ban Assault Weapons?",
+            "response":"Yes"
+          },
+          {
+            "question":"Should Federal or State Governments Implement Ban the Box Legislation, which Prevents Employers from Asking about a Job Applicants' Criminal History?",
+            "response":"Yes"
+          },
+          {
+            "question":"Should the US End the Cash Bail System?",
+            "response":"Yes"
+          },
+          {
+            "question":"Should the Death Penalty Be Allowed?",
+            "response":"No"
+          },
+          {
+            "question":"Should the Use of Private Prisons Continue?",
+            "response":"No"
+          },
+          {
+            "question":"Should Universal Background Checks for Gun Purchases Be Made Law?",
+            "response":"Yes"
+          }
+        ]
+      },
+      "LGBTQ+": {
+        "score": "5,5",
+        "questions": [
+          {
+            "question":"Should Adoption Agencies Be Able to Refuse LGBTQ+ Couples?",
+            "response":"No"
+          },
+          {
+            "question":"Should Federal and State Governments Allow Nonbinary and Transgender People to Choose the Gender That Matches Their Identity (Including a Third Gender Option) for Government Documents?",
+            "response":"Yes"
+          },
+          {
+            "question":"Should LGBTQ+ People Have Protection from Being Fired for Being LGBTQ+?",
+            "response":"Yes"
+          },
+          {
+            "question":"Should the Government Allow Businesses to Deny Services to LGBTQ+ Customers Using Religious Freedom Laws?",
+            "response":"No"
+          },
+          {
+            "question":"Should Transgender People Be Allowed to Serve in the US Military?",
+            "response":"Yes"
+          }
+        ]
+      },
+      "Immigration": {
+        "score": "4,5",
+        "questions" : [
+          {
+            "question":"Should the US Continue to Build a Border Wall at the US/Mexico Border?",
+            "response":"No"
+          },
+          {
+            "question":"Should the US End the Deferred Action for Childhood Arrivals (DACA) Policy?",
+            "response":"No"
+          },
+          {
+            "question":"Should the US Decriminalize Illegal Border Crossings?",
+            "response":"No"
+          },
+          {
+            "question":"Should Immigrants Who Entered the US Illegally Be Denied a Path to Citizenship?",
+            "response":"No"
+          },
+          {
+            "question":"Should the Federal Government Limit the Number of Green Card Holders by which Immigrants Are Likely to Be Dependent on Government Resources (the Public Charge Rule)?",
+            "response":"No"
+          }
+        ]
+      },
+      "Healthcare": {
+        "score": "7,8",
+        "questions": [
+          {
+            "question":"Should Abortion Be Legal?",
+            "response":"Yes"
+          },
+          {
+            "question":"Should Americans Be Able to Import Prescription Drugs?",
+            "response":"Yes"
+          },
+          {
+            "question":"Should the US Switch to a Medicare-for-All Healthcare System?",
+            "response":"No"
+          },
+          {
+            "question":"Should the Availability of Naloxone (Narcan) Be Expanded to Help Prevent Opioid Overdoses?",
+            "response":"Yes"
+          },
+          {
+            "question":"Is the Affordable Care Act (Obamacare) Good for Americans?",
+            "response":"Yes"
+          },
+          {
+            "question":"Should the Federal Government Intervene to Lower Prescription Drugs Costs?",
+            "response":"Yes"
+          },
+          {
+            "question":"Should the Federal Government Intervene to End Surprise Medical Billing?",
+            "response":"Yes"
+          },
+          {
+            "question":"Should the United States Leave the World Health Organization (WHO)?",
+            "response":"No"
+          }
+        ]
+      },
+      "Foreign Policy": {
+        "score":"7,7",
+        "questions": [
+          {
+            "question":"Should the Tariffs Imposed on China by President Trump Be Maintained?",
+            "response":"No"
+          },
+          {
+            "question":"Should the US Ease or Cancel the Embargo against Cuba?",
+            "response":"Yes"
+          },
+          {
+            "question":"Should the US Re-Enter a Nuclear Deal with Iran?",
+            "response":"Yes"
+          },
+          {
+            "question":"Does the US Need to Increase the Military Budget to Improve National Security?",
+            "response":"No"
+          },
+          {
+            "question":"Should the US Have Withdrawn from the Open Skies Treaty?",
+            "response":"No"
+          },
+          {
+            "question":"Should the US Withdraw Troops from the Middle East?",
+            "response":"Yes"
+          },
+          {
+            "question":"Should the US Have Withdrawn Troops from Northern Syria in Oct. 2019?",
+            "response":"No"
+          }
+        ]
+      },
       "Environment": "6,7",
       "Elections": "4,6",
       "Economy": "3,7",
@@ -13,35 +161,479 @@
       "Education": "5,6"
     }, 
     "trump": {
-      "Crime & Justice": "1,7",
-      "LGBTQ+": "0,5",
-      "Immigration": "1,5",
-      "Healthcare": "4,8",
-      "Foreign Policy": "1,7",
+      "Crime & Justice": {
+        "score": "1,7",
+        "questions": [
+          {
+            "question":"Should Police Departments Be Defunded, if Not Abolished?",
+            "response":"No"
+          },
+          {
+            "question":"Should the US Ban Assault Weapons?",
+            "response":"No"
+          },
+          {
+            "question":"Should Federal or State Governments Implement Ban the Box Legislation, which Prevents Employers from Asking about a Job Applicants' Criminal History?",
+            "response":"Yes"
+          },
+          {
+            "question":"Should the US End the Cash Bail System?",
+            "response":"No"
+          },
+          {
+            "question":"Should the Death Penalty Be Allowed?",
+            "response":"Yes"
+          },
+          {
+            "question":"Should the Use of Private Prisons Continue?",
+            "response":"Yes"
+          },
+          {
+            "question":"Should Universal Background Checks for Gun Purchases Be Made Law?",
+            "response":"No"
+          }
+        ]
+      },
+      "LGBTQ+": {
+        "score": "0,5",
+        "questions": [
+          {
+            "question":"Should Adoption Agencies Be Able to Refuse LGBTQ+ Couples?",
+            "response":"Yes"
+          },
+          {
+            "question":"Should Federal and State Governments Allow Nonbinary and Transgender People to Choose the Gender That Matches Their Identity (Including a Third Gender Option) for Government Documents?",
+            "response":"Unknown"
+          },
+          {
+            "question":"Should LGBTQ+ People Have Protection from Being Fired for Being LGBTQ+?",
+            "response":"No"
+          },
+          {
+            "question":"Should the Government Allow Businesses to Deny Services to LGBTQ+ Customers Using Religious Freedom Laws?",
+            "response":"Yes"
+          },
+          {
+            "question":"Should Transgender People Be Allowed to Serve in the US Military?",
+            "response":"No"
+          }
+        ]
+      },
+      "Immigration": {
+        "score":"1,5",
+        "questions" : [
+          {
+            "question":"Should the US Continue to Build a Border Wall at the US/Mexico Border?",
+            "response":"Yes"
+          },
+          {
+            "question":"Should the US End the Deferred Action for Childhood Arrivals (DACA) Policy?",
+            "response":"No"
+          },
+          {
+            "question":"Should the US Decriminalize Illegal Border Crossings?",
+            "response":"No"
+          },
+          {
+            "question":"Should Immigrants Who Entered the US Illegally Be Denied a Path to Citizenship?",
+            "response":"Yes"
+          },
+          {
+            "question":"Should the Federal Government Limit the Number of Green Card Holders by which Immigrants Are Likely to Be Dependent on Government Resources (the Public Charge Rule)?",
+            "response":"Yes"
+          }
+        ]
+      },
+      "Healthcare": {
+        "score": "4,8",
+        "questions": [
+          {
+            "question":"Should Abortion Be Legal?",
+            "response":"No"
+          },
+          {
+            "question":"Should Americans Be Able to Import Prescription Drugs?",
+            "response":"Yes"
+          },
+          {
+            "question":"Should the US Switch to a Medicare-for-All Healthcare System?",
+            "response":"No"
+          },
+          {
+            "question":"Should the Availability of Naloxone (Narcan) Be Expanded to Help Prevent Opioid Overdoses?",
+            "response":"Yes"
+          },
+          {
+            "question":"Is the Affordable Care Act (Obamacare) Good for Americans?",
+            "response":"No"
+          },
+          {
+            "question":"Should the Federal Government Intervene to Lower Prescription Drugs Costs?",
+            "response":"Yes"
+          },
+          {
+            "question":"Should the Federal Government Intervene to End Surprise Medical Billing?",
+            "response":"Yes"
+          },
+          {
+            "question":"Should the United States Leave the World Health Organization (WHO)?",
+            "response":"Yes"
+          }
+        ]
+      },
+      "Foreign Policy": {
+        "score": "1,7",
+        "questions": [
+          {
+            "question":"Should the Tariffs Imposed on China by President Trump Be Maintained?",
+            "response":"Yes"
+          },
+          {
+            "question":"Should the US Ease or Cancel the Embargo against Cuba?",
+            "response":"No"
+          },
+          {
+            "question":"Should the US Re-Enter a Nuclear Deal with Iran?",
+            "response":"No"
+          },
+          {
+            "question":"Does the US Need to Increase the Military Budget to Improve National Security?",
+            "response":"Yes"
+          },
+          {
+            "question":"Should the US Have Withdrawn from the Open Skies Treaty?",
+            "response":"Yes"
+          },
+          {
+            "question":"Should the US Withdraw Troops from the Middle East?",
+            "response":"Yes"
+          },
+          {
+            "question":"Should the US Have Withdrawn Troops from Northern Syria in Oct. 2019?",
+            "response":"Yes"
+          }
+        ]
+      },
       "Environment": "2,7",
       "Elections": "0,6",
       "Economy": "0,7",
       "Domestic Policy": "2,9",
       "Education": "1,6"
     },
-    "jorgensen": {
-      "Crime & Justice": "3,7",
-      "LGBTQ+": "2,5",
-      "Immigration": "5,5",
-      "Healthcare": "5,8",
-      "Foreign Policy": "6,7",
+      "jorgensen": {
+      "Crime & Justice": {
+        "score": "3,7",
+        "questions": [
+          {
+            "question":"Should Police Departments Be Defunded, if Not Abolished?",
+            "response":"Yes"
+          },
+          {
+            "question":"Should the US Ban Assault Weapons?",
+            "response":"No"
+          },
+          {
+            "question":"Should Federal or State Governments Implement Ban the Box Legislation, which Prevents Employers from Asking about a Job Applicants' Criminal History?",
+            "response":"NC"
+          },
+          {
+            "question":"Should the US End the Cash Bail System?",
+            "response":"Yes"
+          },
+          {
+            "question":"Should the Death Penalty Be Allowed?",
+            "response":"No"
+          },
+          {
+            "question":"Should the Use of Private Prisons Continue?",
+            "response":"No"
+          },
+          {
+            "question":"Should Universal Background Checks for Gun Purchases Be Made Law?",
+            "response":"No"
+          }
+        ]
+      },
+      "LGBTQ+": {
+        "score": "2,5",
+        "questions": [
+          {
+            "question":"Should Adoption Agencies Be Able to Refuse LGBTQ+ Couples?",
+            "response":"Yes"
+          },
+          {
+            "question":"Should Federal and State Governments Allow Nonbinary and Transgender People to Choose the Gender That Matches Their Identity (Including a Third Gender Option) for Government Documents?",
+            "response":"Yes"
+          },
+          {
+            "question":"Should LGBTQ+ People Have Protection from Being Fired for Being LGBTQ+?",
+            "response":"NC"
+          },
+          {
+            "question":"Should the Government Allow Businesses to Deny Services to LGBTQ+ Customers Using Religious Freedom Laws?",
+            "response":"Yes"
+          },
+          {
+            "question":"Should Transgender People Be Allowed to Serve in the US Military?",
+            "response":"Yes"
+          }
+        ]
+      },
+      "Immigration": {
+        "score": "5,5",
+        "questions" : [
+          {
+            "question":"Should the US Continue to Build a Border Wall at the US/Mexico Border?",
+            "response":"No"
+          },
+          {
+            "question":"Should the US End the Deferred Action for Childhood Arrivals (DACA) Policy?",
+            "response":"No"
+          },
+          {
+            "question":"Should the US Decriminalize Illegal Border Crossings?",
+            "response":"Yes"
+          },
+          {
+            "question":"Should Immigrants Who Entered the US Illegally Be Denied a Path to Citizenship?",
+            "response":"No"
+          },
+          {
+            "question":"Should the Federal Government Limit the Number of Green Card Holders by which Immigrants Are Likely to Be Dependent on Government Resources (the Public Charge Rule)?",
+            "response":"No"
+          }
+        ]
+      },
+      "Healthcare": {
+        "score": "5,8",
+        "questions": [
+          {
+            "question":"Should Abortion Be Legal?",
+            "response":"Yes"
+          },
+          {
+            "question":"Should Americans Be Able to Import Prescription Drugs?",
+            "response":"Yes"
+          },
+          {
+            "question":"Should the US Switch to a Medicare-for-All Healthcare System?",
+            "response":"No"
+          },
+          {
+            "question":"Should the Availability of Naloxone (Narcan) Be Expanded to Help Prevent Opioid Overdoses?",
+            "response":"Yes"
+          },
+          {
+            "question":"Is the Affordable Care Act (Obamacare) Good for Americans?",
+            "response":"No"
+          },
+          {
+            "question":"Should the Federal Government Intervene to Lower Prescription Drugs Costs?",
+            "response":"Yes"
+          },
+          {
+            "question":"Should the Federal Government Intervene to End Surprise Medical Billing?",
+            "response":"Yes"
+          },
+          {
+            "question":"Should the United States Leave the World Health Organization (WHO)?",
+            "response":"Yes"
+          }
+        ]
+      },
+      "Foreign Policy": {
+        "score": "6,7",
+        "questions": [
+          {
+            "question":"Should the Tariffs Imposed on China by President Trump Be Maintained?",
+            "response":"No"
+          },
+          {
+            "question":"Should the US Ease or Cancel the Embargo against Cuba?",
+            "response":"Yes"
+          },
+          {
+            "question":"Should the US Re-Enter a Nuclear Deal with Iran?",
+            "response":"Yes"
+          },
+          {
+            "question":"Does the US Need to Increase the Military Budget to Improve National Security?",
+            "response":"No"
+          },
+          {
+            "question":"Should the US Have Withdrawn from the Open Skies Treaty?",
+            "response":"No"
+          },
+          {
+            "question":"Should the US Withdraw Troops from the Middle East?",
+            "response":"Yes"
+          },
+          {
+            "question":"Should the US Have Withdrawn Troops from Northern Syria in Oct. 2019?",
+            "response":"Yes"
+          }
+        ]
+      },
       "Environment": "1,7",
       "Elections": "1,6",
       "Economy": "0,7",
       "Domestic Policy": "2,9",
       "Education": "1,6"
     },
-    "hawkins": {
-      "Crime & Justice": "4,7",
-      "LGBTQ+": "4,5",
-      "Immigration": "5,5",
-      "Healthcare": "4,8",
-      "Foreign Policy": "7,7",
+      "hawkins": {
+      "Crime & Justice": {
+        "score": "4,7",
+        "questions": [
+          {
+            "question":"Should Police Departments Be Defunded, if Not Abolished?",
+            "response":"Yes"
+          },
+          {
+            "question":"Should the US Ban Assault Weapons?",
+            "response":"Yes"
+          },
+          {
+            "question":"Should Federal or State Governments Implement Ban the Box Legislation, which Prevents Employers from Asking about a Job Applicants' Criminal History?",
+            "response":"Yes"
+          },
+          {
+            "question":"Should the US End the Cash Bail System?",
+            "response":"NC"
+          },
+          {
+            "question":"Should the Death Penalty Be Allowed?",
+            "response":"No"
+          },
+          {
+            "question":"Should the Use of Private Prisons Continue?",
+            "response":"No"
+          },
+          {
+            "question":"Should Universal Background Checks for Gun Purchases Be Made Law?",
+            "response":"Yes"
+          }
+        ]
+      },
+      "LGBTQ+": {
+        "score": "4,5",
+        "questions": [
+          {
+            "question":"Should Adoption Agencies Be Able to Refuse LGBTQ+ Couples?",
+            "response":"Unknown"
+          },
+          {
+            "question":"Should Federal and State Governments Allow Nonbinary and Transgender People to Choose the Gender That Matches Their Identity (Including a Third Gender Option) for Government Documents?",
+            "response":"Yes"
+          },
+          {
+            "question":"Should LGBTQ+ People Have Protection from Being Fired for Being LGBTQ+?",
+            "response":"Yes"
+          },
+          {
+            "question":"Should the Government Allow Businesses to Deny Services to LGBTQ+ Customers Using Religious Freedom Laws?",
+            "response":"No"
+          },
+          {
+            "question":"Should Transgender People Be Allowed to Serve in the US Military?",
+            "response":"Yes"
+          }
+        ]
+      },
+      "Immigration": {
+        "score": "5,5",
+        "questions" : [
+          {
+            "question":"Should the US Continue to Build a Border Wall at the US/Mexico Border?",
+            "response":"No"
+          },
+          {
+            "question":"Should the US End the Deferred Action for Childhood Arrivals (DACA) Policy?",
+            "response":"No"
+          },
+          {
+            "question":"Should the US Decriminalize Illegal Border Crossings?",
+            "response":"Yes"
+          },
+          {
+            "question":"Should Immigrants Who Entered the US Illegally Be Denied a Path to Citizenship?",
+            "response":"No"
+          },
+          {
+            "question":"Should the Federal Government Limit the Number of Green Card Holders by which Immigrants Are Likely to Be Dependent on Government Resources (the Public Charge Rule)?",
+            "response":"No"
+          }
+        ]
+      },
+      "Healthcare": {
+        "score": "4,8",
+        "questions": [
+          {
+            "question":"Should Abortion Be Legal?",
+            "response":"Yes"
+          },
+          {
+            "question":"Should Americans Be Able to Import Prescription Drugs?",
+            "response":"Yes"
+          },
+          {
+            "question":"Should the US Switch to a Medicare-for-All Healthcare System?",
+            "response":"Yes"
+          },
+          {
+            "question":"Should the Availability of Naloxone (Narcan) Be Expanded to Help Prevent Opioid Overdoses?",
+            "response":"NC"
+          },
+          {
+            "question":"Is the Affordable Care Act (Obamacare) Good for Americans?",
+            "response":"NC"
+          },
+          {
+            "question":"Should the Federal Government Intervene to Lower Prescription Drugs Costs?",
+            "response":"Pro"
+          },
+          {
+            "question":"Should the Federal Government Intervene to End Surprise Medical Billing?",
+            "response":"Unknown"
+          },
+          {
+            "question":"Should the United States Leave the World Health Organization (WHO)?",
+            "response":"Unknown"
+          }
+        ]
+      },
+      "Foreign Policy": {
+        "score": "7,7",
+        "questions": [
+          {
+            "question":"Should the Tariffs Imposed on China by President Trump Be Maintained?",
+            "response":"No"
+          },
+          {
+            "question":"Should the US Ease or Cancel the Embargo against Cuba?",
+            "response":"Yes"
+          },
+          {
+            "question":"Should the US Re-Enter a Nuclear Deal with Iran?",
+            "response":"Yes"
+          },
+          {
+            "question":"Does the US Need to Increase the Military Budget to Improve National Security?",
+            "response":"No"
+          },
+          {
+            "question":"Should the US Have Withdrawn from the Open Skies Treaty?",
+            "response":"No"
+          },
+          {
+            "question":"Should the US Withdraw Troops from the Middle East?",
+            "response":"Yes"
+          },
+          {
+            "question":"Should the US Have Withdrawn Troops from Northern Syria in Oct. 2019?",
+            "response":"No"
+          }
+        ]
+      },
       "Environment": "6,7",
       "Elections": "6,6",
       "Economy": "4,7",

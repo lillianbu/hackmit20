@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import Slider from './Slider';
 
 export default class CandidateCard extends Component {
   constructor(props) {
@@ -15,7 +16,7 @@ export default class CandidateCard extends Component {
         <a>average position</a>
         <div className="break"></div>
         <a>left</a>
-        {/* <Slider candLeaning={this.props.candLeaning} detailedCard={false}></Slider> */}
+        <Slider candLeaning={this.props.avgLean}></Slider>
         <a>right</a>
         <div className="break"></div>
         <div>
