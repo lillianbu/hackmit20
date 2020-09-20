@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import './App.css';
 import Slider from './Slider';
 
+const categoryInfo = new Map([["Crime & Justice", {question: "question?", answer: "answer"}]])
+// title; [{question, ansewr}]
 export default class CandidateDetailedCard extends Component {
   constructor(props) {
     super(props)
@@ -14,7 +16,7 @@ export default class CandidateDetailedCard extends Component {
           <img className="detailed-card-image" alt={this.props.alt} src={this.props.image} /> 
           <div className="break"></div>
           <a>average position</a>
-          <div className="break"></div>
+          <Slider candLeaning={this.props.avgLean}></Slider>
           <a>left</a>
           {/* <Slider candLeaning={this.props.candLeaning} detailedCard={true}></Slider> */}
           {this.props.leanSliders}
@@ -22,9 +24,10 @@ export default class CandidateDetailedCard extends Component {
           <div className="break"></div>
         </div>
         <div className="vl"></div>
-        {/* <div>
+        <div>
           <Slider candLeaning={this.props.candLeaning} detailedCard={true}></Slider>
-        </div> */}
+          {this.props.selectedCategory}
+        </div>
       </span>
     )
   }

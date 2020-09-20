@@ -24,6 +24,7 @@ export default class CarouselContainer extends Component {
     	card1Index: -1,
 		card2Index: -1,
 		candidates: require('./files/candidates_full.json').Candidates,
+		selectedCategory: '',
 	}
 	// this.readCandidates();
   }
@@ -48,7 +49,7 @@ export default class CarouselContainer extends Component {
       let leanValue = 0;
 
       Object.entries(leaning).forEach(element => {
-		console.log("elemetn: ", element);
+		// console.log("elemetn: ", element);
 		const key = element[0].toLowerCase();
 		let val;
 		try {
@@ -69,6 +70,12 @@ export default class CarouselContainer extends Component {
       return topics;
   }   
 
+  selectCategory = (categoryTitle) => {
+  	console.log('in select')
+  	console.log(categoryTitle)
+  	this.setState({selectedCategory: categoryTitle});	
+  }
+
   createSliders = (allLeanings) => {
 	// const topicLean = this.getLeaning();
 	const leanSliders = []
@@ -76,8 +83,7 @@ export default class CarouselContainer extends Component {
 		// console.log(index, value);
 		leanSliders.push((
 			<div key={index} className="topic-container">
-			<a className="topic-title">{index}</a>
-			<Slider candLeaning={value.leanValue} detailedCard={false}></Slider>
+			<Slider candLeaning={value.leanValue} detailedCard={false} categoryTitle={index} selectCategory={this.selectCategory}></Slider>
 			<div className="break"></div>
 			</div>
 		))
@@ -134,6 +140,8 @@ export default class CarouselContainer extends Component {
 				selectCard1={this.selectCard1} 
 				selectCard2={this.selectCard2} 
 				leanSliders={leanSliders}
+				avgLean={avgLean}
+				selectedCategory={this.state.selectedCategory}
 			/>);
 			index += 1;
 		}
