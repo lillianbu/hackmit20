@@ -13,15 +13,17 @@ export default class CandidateCard extends Component {
       <span className="card-container"> 
         <img alt={this.props.alt} src={this.props.image} /> 
         <div className="break"></div>
-        <a>average position</a>
-        <div className="break"></div>
-        <a>left</a>
-        <Slider candLeaning={this.props.avgLean}></Slider>
-        <a>right</a>
-        <div className="break"></div>
+        <div className="topic-container">
+          <p className="topic-title">average position</p>
+          <div className="avg-position-slider-container">
+            <p className="spectrum-label">left</p>
+            <Slider candLeaning={this.props.avgLean}></Slider>
+            <p className="spectrum-label">right</p>
+          </div>
+        </div>
         <div>
-          <button onClick={() => this.props.selectCard1(this.props.carouselIndex)}>Card 1</button>
-          <button onClick={() => this.props.selectCard2(this.props.carouselIndex)}>Card 2</button>
+          <button className="select-card-btn" onClick={() => this.props.selectCard1(this.props.carouselIndex)}>card 1</button>
+          <button className="select-card-btn" onClick={() => this.props.selectCard2(this.props.carouselIndex)}>card 2</button>
         </div>  
       </span>
     )
