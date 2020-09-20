@@ -39,23 +39,36 @@
 }
 
 .carousel-container {
-  margin-top: 100px;
+  margin-top: 60px;
 }
 
 .card-container {
   display: block;
   width: 500px;
-  height: 500px;
+  height: 300px;
   border-width: 1px;
   border-style: solid;
   border-color: white;
   border-radius: 20px;
   background-color: white;
+  margin-left: 30px;
+  margin-right: 30px;
 }
 
 img {
   height: auto; 
   width: auto; 
-  max-width: 300px; 
-  max-height: 300px;
+  max-width: 200px; 
+  max-height: 200px;
+}
+
+.empty-card {
+  text-align: center;
+}
+
+.selected-card-container {
+  display: flex;
+  justify-content: center;
+  margin-left: 10px;
+  margin-right: 10px;
 }

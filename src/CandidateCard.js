@@ -1,15 +1,17 @@
 import React, { Component } from 'react';
 import './App.css';
-import biden from './images/biden.jpg';
-
-// const biden = require('./images/biden.jpg');
 
 export default class CandidateCard extends Component {
+  constructor(props) {
+    super(props)
+  }
   render() {
     return(
-      <div className="card-container"> 
-        <img alt="biden" src={biden} /> 
-      </div>
+      <span className="card-container"> 
+        <img alt={this.props.alt} src={this.props.image} /> 
+        <button onClick={() => this.props.selectCard1(this.props.carouselIndex)}>Card 1</button>
+        <button onClick={() => this.props.selectCard2(this.props.carouselIndex)}>Card 2</button>
+      </span>
     )
   }
 }
