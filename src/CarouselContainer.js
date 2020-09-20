@@ -20,45 +20,73 @@ export default class CarouselContainer extends Component {
     super(props)
     this.state = {
     	card1Index: -1,
-    	card2Index: -1
-    }
+		card2Index: -1,
+		candidates: require('./files/candidates_full.json').Candidates,
+	}
+	// this.readCandidates();
+  }
+
+  readCandidates = () => {
+    const obj = require('./files/candidates_full.json');
+	this.setState({candidates: obj.Candidates});
+	console.log("candidatse" + this.state.candidates);
   }
 
   selectCard1 = (index) => {
   	if (index >= 0 && index <= 3) {
-  		this.setState({card1Index: index})
+  		this.setState({card1Index: index});
   	} else if (this.state.card1Index !== -1) {
-  		this.setState({card1Index: -1})
+  		this.setState({card1Index: -1});
   	}
   }
 
   selectCard2 = (index) => {
   	if (index >= 0 && index <= 3) {
-  		this.setState({card2Index: index})
+  		this.setState({card2Index: index});
   	} else if (this.state.card2Index !== -1) {
-  		this.setState({card2Index: -1})
+  		this.setState({card2Index: -1});
   	}
   }
 
   render() {
-  	let slides = []
-  	let noButtonSlides = []
-  	let index = 0
-  	for (const [key, value] of candidateInfo) {
-	  slides.push(<CandidateCard image={value} alt={key} carouselIndex={index} selectCard1={this.selectCard1} selectCard2={this.selectCard2} showButtons={true}/>)
-	  noButtonSlides.push(<CandidateCard image={value} alt={key} carouselIndex={index} selectCard1={this.selectCard1} selectCard2={this.selectCard2} showButtons={false}/>)
-	  index += 1
-	}
-    return(
-	  <div>
-	  	  <div className="selected-card-container">
-	  	  	{this.state.card1Index < 0 ? (<EmptyCard />) : noButtonSlides[this.state.card1Index]}
-	  	  	{this.state.card2Index < 0 ? (<EmptyCard />) : noButtonSlides[this.state.card2Index]}
-	  	  </div>
-	      <div className="carousel-container">
-	        <Carousel slides={slides} autoplay={false} interval={1000}/>
-	      </div>
-      </div>
-    )
+		let slides = [];
+		let noButtonSlides = [];
+	  	let index = 0;
+	  	
+		for (const [key, value] of candidateInfo) {
+			const candLeaning = this.state.candidates[key];
+			slides.push(
+			<CandidateCard 
+				image={value} 
+				alt={key} 
+				carouselIndex={index} 
+				selectCard1={this.selectCard1} 
+				selectCard2={this.selectCard2} 
+				candLeaning={candLeaning}
+				showButtons={true}
+				/>);
+			noButtonSlides.push(
+			<CandidateCard 
+				image={value} 
+				alt={key} 
+				carouselIndex={index} 
+				selectCard1={this.selectCard1} 
+				selectCard2={this.selectCard2} 
+				candLeaning={candLeaning}
+				showButtons={false}
+			/>);
+			index += 1;
+		}
+		return(
+		<div>
+			<div className="selected-card-container">
+				{this.state.card1Index < 0 ? (<EmptyCard />) : noButtonSlides[this.state.card1Index]}
+				{this.state.card2Index < 0 ? (<EmptyCard />) : noButtonSlides[this.state.card2Index]}
+			</div>
+			<div className="carousel-container">
+				<Carousel slides={slides} autoplay={false} interval={1000}/>
+			</div>
+		</div>
+		)
   }
 }

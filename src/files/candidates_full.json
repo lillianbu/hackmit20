@@ -1,0 +1,52 @@
+{
+  "Candidates": {
+    "biden": {
+      "Crime & Justice": "6,7",
+      "LGBTQ+": "5,5",
+      "Immigration": "4,5",
+      "Healthcare": "7,8",
+      "Foreign Policy": "7,7",
+      "Environment": "6,7",
+      "Elections": "4,6",
+      "Economy": "3,7",
+      "Domestic Policy": "5,9",
+      "Education": "5,6"
+    }, 
+    "trump": {
+      "Crime & Justice": "1,7",
+      "LGBTQ+": "0,5",
+      "Immigration": "1,5",
+      "Healthcare": "4,8",
+      "Foreign Policy": "1,7",
+      "Environment": "2,7",
+      "Elections": "0,6",
+      "Economy": "0,7",
+      "Domestic Policy": "2,9",
+      "Education": "1,6"
+    },
+      "jorgensen": {
+      "Crime & Justice": "3,7",
+      "LGBTQ+": "2,5",
+      "Immigration": "5,5",
+      "Healthcare": "5,8",
+      "Foreign Policy": "6,7",
+      "Environment": "1,7",
+      "Elections": "1,6",
+      "Economy": "0,7",
+      "Domestic Policy": "2,9",
+      "Education": "1,6"
+    },
+      "hawkins": {
+      "Crime & Justice": "4,7",
+      "LGBTQ+": "4,5",
+      "Immigration": "5,5",
+      "Healthcare": "4,8",
+      "Foreign Policy": "7,7",
+      "Environment": "6,7",
+      "Elections": "6,6",
+      "Economy": "4,7",
+      "Domestic Policy": "6,9",
+      "Education": "3,6"
+    }
+  }
+}
