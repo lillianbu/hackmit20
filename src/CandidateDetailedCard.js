@@ -16,14 +16,15 @@ export default class CandidateDetailedCard extends Component {
           <a>average position</a>
           <div className="break"></div>
           <a>left</a>
-          <Slider candLeaning={this.props.candLeaning} detailedCard={true}></Slider>
+          {/* <Slider candLeaning={this.props.candLeaning} detailedCard={true}></Slider> */}
+          {this.props.leanSliders}
           <a>right</a>
           <div className="break"></div>
         </div>
-        <div class="vl"></div>
-        <div>
+        <div className="vl"></div>
+        {/* <div>
           <Slider candLeaning={this.props.candLeaning} detailedCard={true}></Slider>
-        </div>
+        </div> */}
       </span>
     )
   }

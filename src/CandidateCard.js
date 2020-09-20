@@ -8,6 +8,7 @@ export default class CandidateCard extends Component {
   }
 
   render() {
+
     return(
       <span className="card-container"> 
         <img alt={this.props.alt} src={this.props.image} /> 
@@ -15,7 +16,7 @@ export default class CandidateCard extends Component {
         <a>average position</a>
         <div className="break"></div>
         <a>left</a>
-        <Slider candLeaning={this.props.candLeaning} detailedCard={false}></Slider>
+        <Slider candLeaning={this.props.avgLean}></Slider>
         <a>right</a>
         <div className="break"></div>
         <div>
