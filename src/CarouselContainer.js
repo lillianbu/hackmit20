@@ -48,8 +48,16 @@ export default class CarouselContainer extends Component {
       let leanValue = 0;
 
       Object.entries(leaning).forEach(element => {
-        const key = element[0].toLowerCase();
-        const val = element[1].split(',');
+		console.log("elemetn: ", element);
+		const key = element[0].toLowerCase();
+		let val;
+		try {
+			val = element[1].score.split(',');
+		  }
+		  catch(err) {
+			val = element[1].split(',');
+		  }
+        // const val = element[1].score.split(',');
         const rawValues = val.map(x => parseInt(x)); // [score, total]
         leanValue = this.getLeanScore(...rawValues);
         topics[key] = {
