@@ -5,8 +5,9 @@ import SentimentDissatisfiedOutlinedIcon from '@material-ui/icons/SentimentDissa
 import SentimentDissatisfiedIcon from '@material-ui/icons/SentimentDissatisfied';
 import SentimentSatisfiedOutlinedIcon from '@material-ui/icons/SentimentSatisfiedOutlined';
 import NotInterestedIcon from '@material-ui/icons/NotInterested';
+import Tooltip from '@material-ui/core/Tooltip';
 
-const responseMap = new Map([['Yes', <SentimentSatisfiedOutlinedIcon style={{ color: 'lightgreen' }}/>], ['No', <SentimentDissatisfiedOutlinedIcon style={{ color: 'lightpink' }}/>], ['NC', <SentimentDissatisfiedIcon style={{ color: 'lightgray' }}/>], ['Unknown', <NotInterestedIcon style={{ color: 'lightgray' }}/>]]);
+const responseMap = new Map([['Yes', <Tooltip title="Pro"><SentimentSatisfiedOutlinedIcon style={{ color: 'lightgreen', marginRight: '5px'}}/></Tooltip>], ['No', <Tooltip title="Con"><SentimentDissatisfiedOutlinedIcon style={{ color: 'lightpink', marginRight: '5px' }}/></Tooltip>], ['NC', <Tooltip title="Position Unclear"><SentimentDissatisfiedIcon style={{ color: 'lightgray', marginRight: '5px' }}/></Tooltip>], ['Unknown', <Tooltip title="Position Unknown"><NotInterestedIcon style={{ color: 'lightgray', marginRight: '5px' }}/></Tooltip>]]);
 export default class CandidateDetailedCard extends Component {
   constructor(props) {
     super(props)
