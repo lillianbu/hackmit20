@@ -8,9 +8,26 @@ export default class CandidateCard extends Component {
   }
 
   render() {
+    let name = ''
+    switch(this.props.alt) {
+      case 'biden':
+        name = 'Joe Biden'
+        break
+      case 'trump':
+        name = 'Donald Trump'
+        break
+      case 'jorgensen':
+        name = 'Jo Jorgensen'
+        break
+      case 'hawkins':
+        name = 'Howie Hawkins'
+    }
 
     return(
       <span className="card-container"> 
+        <h1 className="topic-heading">
+          {name}
+        </h1>
         <div className="candidate-img-container">
           <img className="candidate-img" alt={this.props.alt} src={this.props.image} /> 
         </div>
