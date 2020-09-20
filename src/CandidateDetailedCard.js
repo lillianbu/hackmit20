@@ -37,13 +37,13 @@ export default class CandidateDetailedCard extends Component {
         </div>
         <div className="vl"></div>
         <div className="detailed-card-right">
-          <h1>{this.props.selectedCategory}</h1>
+          <h1 className="topic-heading">{this.props.selectedCategory}</h1>
           <div className="question-container">
             {this.props.selectedCategory !== '' 
               ? questionDivs
               : (
                   <div>
-                    Please select a category 
+                    please select a category 
                   </div>
             )}
           </div>

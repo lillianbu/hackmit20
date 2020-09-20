@@ -21,6 +21,9 @@ export default class CandidateCard extends Component {
             <Slider candLeaning={this.props.avgLean}></Slider>
           </div>
         </div>
+        <div className="select-text">
+          select card to view positions on topics
+        </div>
         <div>
           <button className="select-card-btn" onClick={() => this.props.selectCard1(this.props.carouselIndex)}>card 1</button>
           <button className="select-card-btn" onClick={() => this.props.selectCard2(this.props.carouselIndex)}>card 2</button>
