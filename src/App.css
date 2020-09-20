@@ -87,7 +87,7 @@ img {
 }
 
 .rectangle {
-  width: 200px; 
+  width: 150px; 
   height: 10px; 
   max-width: 200px; 
   max-height: 10px;
@@ -163,10 +163,14 @@ a {
 }
 
 .detailed-card-left {
-  display: block;
-  margin-left: auto;
+  display: flex;
+  /* justify-content: center; */
+  flex-direction: column;
+  /* margin-left: auto; */
   margin-right: auto;
   width: 230px;
+  align-items: center;
+  padding-right: 20px;
 }
 
 .topic-container {
@@ -174,7 +178,7 @@ a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin: 20px 0;
+  margin: 10px 0;
 }
 
 .topic-title {
@@ -206,6 +210,7 @@ a {
   width: 200px;
   height: 200px;
   border-radius: 100px;
+  margin-bottom: 20px;
 }
 .candidate-img {
   min-width: 100%;
@@ -224,13 +229,16 @@ a {
 }
 
 .detailed-card-right {
-  overflow: wrap;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
   width: 230px;
 }
 
 .questions {
   display: flex;
   justify-content: space-between;
+  margin: 10px;
 }
 
 .header {

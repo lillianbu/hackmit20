@@ -19,7 +19,7 @@ class Slider extends Component {
                             ? (
                                 <div className="center"></div>
                                 ): 
-                                (<div className={`leaning ${side}`} style={{ width: `${Math.abs(leaning)*100 + 'px'}`}} ></div> )
+                                (<div className={`leaning ${side}`} style={{ width: `${Math.abs(leaning)*75 + 'px'}`}} ></div> )
                             }
                     </div>
                     <p className="spectrum-label">right</p>
