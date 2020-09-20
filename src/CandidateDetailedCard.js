@@ -29,7 +29,6 @@ export default class CandidateDetailedCard extends Component {
           <a>left</a>
           <Slider candLeaning={this.props.avgLean}></Slider>
           {/* <Slider candLeaning={this.props.candLeaning} detailedCard={true}></Slider> */}
-          {/* {console.log(this.props.allQuestions)} */}
           <a>right</a>
           {this.props.leanSliders}
           <div className="break"></div>
