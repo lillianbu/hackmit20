@@ -23,14 +23,18 @@ export default class CarouselContainer extends Component {
     this.state = {
     	card1Index: -1,
 		card2Index: -1,
-		candidates: require('./files/candidates_full.json').Candidates,
 	}
 	// this.readCandidates();
   }
 
+  readCandidates = () => {
+    const obj = require('./files/candidates_full.json');
+	this.setState({candidates: obj.Candidates});
+  }
+
   getLeanScore = (val, total) => {
     return (2 * val - total)/total;
-}
+  }
 
   getAverageLean = (allLeanings) => {
       let total = 0;
@@ -43,30 +47,25 @@ export default class CarouselContainer extends Component {
       return avgLean;
   }
 
-  getLeanings = (leaning) => {
-      const topics = {}
+  getLeaningsAndQuestions = (leaning) => {
+	  const topics = {}
+	  const questionsMap = {}
       let leanValue = 0;
 
       Object.entries(leaning).forEach(element => {
-		console.log("elemetn: ", element);
 		const key = element[0].toLowerCase();
-		let val;
-		try {
-			val = element[1].score.split(',');
-		  }
-		  catch(err) {
-			val = element[1].split(',');
-		  }
-        // const val = element[1].score.split(',');
-        const rawValues = val.map(x => parseInt(x)); // [score, total]
+		const score = element[1].score.split(',');
+		const questions = element[1].questions;
+        const rawValues = score.map(x => parseInt(x)); // [score, total]
         leanValue = this.getLeanScore(...rawValues);
         topics[key] = {
           leanValue: leanValue,
           score: rawValues[0],
           total: rawValues[1],
-        };
-      });
-      return topics;
+		};
+		questionsMap[key] = questions;
+	  });
+      return [ topics, questionsMap ];
   }   
 
   createSliders = (allLeanings) => {
@@ -76,17 +75,17 @@ export default class CarouselContainer extends Component {
 		// console.log(index, value);
 		leanSliders.push((
 			<div key={index} className="topic-container">
-			<a className="topic-title">{index}</a>
-			<Slider candLeaning={value.leanValue} detailedCard={false}></Slider>
-			<div className="break"></div>
+				<a className="topic-title">{index}</a>
+				<Slider candLeaning={value.leanValue} detailedCard={false}></Slider>
+				<div className="break"></div>
 			</div>
 		))
 	}
 	return leanSliders;
   }
-  readCandidates = () => {
-    const obj = require('./files/candidates_full.json');
-	this.setState({candidates: obj.Candidates});
+
+  getQuestions = (candidates) => {
+
   }
 
   selectCard1 = (index) => {
@@ -112,8 +111,9 @@ export default class CarouselContainer extends Component {
 
 		for (const [key, value] of candidateInfo) {
 			// const scaledWidth = this.getScaledWidth(1, 7, 100);
-			const candLeaning = this.state.candidates[key];
-			const allLeanings = this.getLeanings(candLeaning);
+			const candidates = require('./files/candidates_full.json').Candidates
+			const candLeaning = candidates[key];
+			const [ allLeanings, allQuestions ] = this.getLeaningsAndQuestions(candLeaning);
 			const leanSliders = this.createSliders(allLeanings);
 			const avgLean = this.getAverageLean(allLeanings);
 
@@ -134,6 +134,7 @@ export default class CarouselContainer extends Component {
 				selectCard1={this.selectCard1} 
 				selectCard2={this.selectCard2} 
 				leanSliders={leanSliders}
+				allQuestions={allQuestions}
 			/>);
 			index += 1;
 		}
