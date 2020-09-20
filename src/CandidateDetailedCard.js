@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import './App.css';
 import Slider from './Slider';
 
-const categoryInfo = new Map([["Crime & Justice", {question: "question?", answer: "answer"}]])
 // title; [{question, ansewr}]
 export default class CandidateDetailedCard extends Component {
   constructor(props) {
@@ -10,6 +9,11 @@ export default class CandidateDetailedCard extends Component {
   }
 
   render() {
+    let questionDivs = null;
+    if (this.props.selectedCategory !== '') {
+      const questionInfo = this.props.allQuestions[this.props.selectedCategory];
+      questionDivs = questionInfo.map(q => <p> {q.response}, {q.question} </p>)
+    }
     return(
       <span className="detailed-card-container"> 
         <div className="detailed-card-left">
@@ -19,14 +23,21 @@ export default class CandidateDetailedCard extends Component {
           <Slider candLeaning={this.props.avgLean}></Slider>
           <a>left</a>
           {/* <Slider candLeaning={this.props.candLeaning} detailedCard={true}></Slider> */}
+          {console.log(this.props.allQuestions)}
           {this.props.leanSliders}
           <a>right</a>
           <div className="break"></div>
         </div>
         <div className="vl"></div>
-        <div>
-          <Slider candLeaning={this.props.candLeaning} detailedCard={true}></Slider>
-          {this.props.selectedCategory}
+        <div className="detailed-card-right">
+          <h1>{this.props.selectedCategory}</h1>
+          {this.props.selectedCategory !== '' 
+            ? questionDivs
+            : (
+                <div>
+                  Please select a category 
+                </div>
+          )}
         </div>
       </span>
     )

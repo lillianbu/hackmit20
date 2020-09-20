@@ -223,3 +223,8 @@ a {
   color: #A9A9A9;
   font-size: 40px;
 }
+
+.detailed-card-right {
+  overflow: wrap;
+  width: 240px;
+}

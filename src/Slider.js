@@ -12,7 +12,7 @@ class Slider extends Component {
         const side = leaning > 0 ? 'left' : 'right'; 
         return (
             <div>
-                {this.props.selectCategory ? (<a onClick={() => this.props.selectCategory(this.props.categoryTitle)} className="topic-title">{this.props.categoryTitle}</a>) : null}
+                {this.props.selectCategory ? (<a onClick={() => this.props.selectCategory(this.props.categoryTitle)} className="topic-title">{this.props.categoryTitle} > </a>) : null}
                 <div className={`rectangle ${leaning === 0 ? "centered" : ""}`}>
                     { leaning === 0 
                         ? (
