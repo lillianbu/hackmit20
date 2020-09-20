@@ -28,11 +28,24 @@ class Slider extends Component {
         return avgLean;
     }
 
+    getLean = () => {
+        const leaning = this.props.candLeaning;
+        let leanValue = 0;
+        Object.entries(leaning).forEach(element => {
+            const values = element[1].split(',');
+            const numValues = values.map(x => parseInt(x));
+            leanValue = this.getScaledWidth(...numValues);
+        });
+        return leanValue;
+    }   
+
     render() {
         // const scaledWidth = this.getScaledWidth(1, 7, 100);
+        const avgLean = this.getAverageLean();
+        const topicLean = this.getLean();
         return (
             <div className="rectangle">
-                <div style={{ width: `${Math.abs(this.getAverageLean())*100 + 'px'}`}} className={`leaning ${this.getAverageLean() > 0 ? 'left' : 'right'}`}></div>
+                <div style={{ width: `${Math.abs(avgLean)*100 + 'px'}`}} className={`leaning ${avgLean > 0 ? 'left' : 'right'}`}></div>
             </div>
         );
     }

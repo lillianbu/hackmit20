@@ -15,7 +15,7 @@ export default class CandidateCard extends Component {
         <a>average position</a>
         <div className="break"></div>
         <a>left</a>
-        <Slider candLeaning={this.props.candLeaning}></Slider>
+        <Slider candLeaning={this.props.candLeaning} showButtons={this.props.showButtons}></Slider>
         <a>right</a>
         <div className="break"></div>
         {this.props.showButtons 
