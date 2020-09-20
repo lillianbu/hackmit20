@@ -181,3 +181,15 @@ a {
   width: 50%;
 }
 
+.topic-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px 0;
+}
+
+.topic-title {
+  margin-bottom: 2px;
+}
+

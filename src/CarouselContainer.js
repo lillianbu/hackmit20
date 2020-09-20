@@ -75,8 +75,8 @@ export default class CarouselContainer extends Component {
 	for (const [index, value] of Object.entries(allLeanings)) {
 		// console.log(index, value);
 		leanSliders.push((
-			<div key={index}>
-			<a>{index}</a>
+			<div key={index} className="topic-container">
+			<a className="topic-title">{index}</a>
 			<Slider candLeaning={value.leanValue} detailedCard={false}></Slider>
 			<div className="break"></div>
 			</div>
