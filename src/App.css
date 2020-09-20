@@ -263,7 +263,7 @@ a {
   line-height: 1.7;
 }
 
-a {
+a.text-link {
   text-decoration: none;
   color: #1193BC;
   font-weight: 600;

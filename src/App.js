@@ -30,7 +30,7 @@ function App() {
         topics allows people to dive deeper. Our hope is for this project to encourage people to engage more with politics and feel confident enough to 
         go out and vote! 
         <br/> <br />
-        The data displayed is from<a href="https://2020election.procon.org/view.source-summary-chart.php?fbclid=IwAR2MHPThLlty_LstQDUTyR8ZBUWIYDyaJkn0WeXujYV4kA5xIFFVo3-sxMU" target="_BLANK">Brittanica’s ProCon.org,</a>which provides up-to-date information on candidates’ 
+        The data displayed is from<a className="text-link" href="https://2020election.procon.org/view.source-summary-chart.php?fbclid=IwAR2MHPThLlty_LstQDUTyR8ZBUWIYDyaJkn0WeXujYV4kA5xIFFVo3-sxMU" target="_BLANK">Brittanica’s ProCon.org,</a>which provides up-to-date information on candidates’ 
         positions on key issues.
       </div>
       <div className="footer">
