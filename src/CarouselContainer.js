@@ -77,10 +77,8 @@ export default class CarouselContainer extends Component {
   }
 
   createSliders = (allLeanings) => {
-	// const topicLean = this.getLeaning();
 	const leanSliders = []
 	for (const [index, value] of Object.entries(allLeanings)) {
-		// console.log(index, value);
 		leanSliders.push((
 			<div key={index} className="topic-container">
 			<Slider candLeaning={value.leanValue} detailedCard={false} categoryTitle={index} selectCategory={this.selectCategory}></Slider>
