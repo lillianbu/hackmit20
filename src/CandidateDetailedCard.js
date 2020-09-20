@@ -16,7 +16,7 @@ export default class CandidateDetailedCard extends Component {
     let questionDivs = null;
     if (this.props.selectedCategory !== '') {
       const questionInfo = this.props.allQuestions[this.props.selectedCategory];
-      questionDivs = questionInfo.map(q => <p className="questions"> <span>{responseMap.get(q.response)}</span> <span>{q.question}</span> </p>)
+      questionDivs = questionInfo.map(q => <p className="questions"> <span className="question-icon">{responseMap.get(q.response)}</span> <span>{q.question}</span> </p>)
     }
     return(
       <span className="detailed-card-container"> 
