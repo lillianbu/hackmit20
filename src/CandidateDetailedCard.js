@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Slider from './Slider';
 
-export default class CandidateCard extends Component {
+export default class CandidateDetailedCard extends Component {
   constructor(props) {
     super(props)
   }
@@ -15,13 +15,9 @@ export default class CandidateCard extends Component {
         <a>average position</a>
         <div className="break"></div>
         <a>left</a>
-        <Slider candLeaning={this.props.candLeaning} detailedCard={false}></Slider>
+        <Slider candLeaning={this.props.candLeaning} detailedCard={true}></Slider>
         <a>right</a>
         <div className="break"></div>
-        <div>
-          <button onClick={() => this.props.selectCard1(this.props.carouselIndex)}>Card 1</button>
-          <button onClick={() => this.props.selectCard2(this.props.carouselIndex)}>Card 2</button>
-        </div>  
       </span>
     )
   }

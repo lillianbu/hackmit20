@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {Carousel} from '3d-react-carousal';
 import CandidateCard from './CandidateCard';
+import CandidateDetailedCard from './CandidateDetailedCard';
 import EmptyCard from './EmptyCard';
 import './App.css';
 import biden from './images/biden.jpg';
@@ -63,17 +64,15 @@ export default class CarouselContainer extends Component {
 				selectCard1={this.selectCard1} 
 				selectCard2={this.selectCard2} 
 				candLeaning={candLeaning}
-				showButtons={true}
 				/>);
 			noButtonSlides.push(
-			<CandidateCard 
+			<CandidateDetailedCard 
 				image={value} 
 				alt={key} 
 				carouselIndex={index} 
 				selectCard1={this.selectCard1} 
 				selectCard2={this.selectCard2} 
 				candLeaning={candLeaning}
-				showButtons={false}
 			/>);
 			index += 1;
 		}
