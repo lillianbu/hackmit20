@@ -11,7 +11,9 @@ export default class CandidateCard extends Component {
 
     return(
       <span className="card-container"> 
-        <img alt={this.props.alt} src={this.props.image} /> 
+        <div className="candidate-img-container">
+          <img className="candidate-img" alt={this.props.alt} src={this.props.image} /> 
+        </div>
         <div className="break"></div>
         <div className="topic-container">
           <p className="topic-title">average position</p>
