@@ -8,7 +8,7 @@ export default class Empty extends Component {
   render() {
     return(
       <span className="card-container empty-card"> 
-        Please select a card 
+        please select a card below
       </span>
     )
   }
