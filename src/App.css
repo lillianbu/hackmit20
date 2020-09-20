@@ -228,3 +228,8 @@ a {
   overflow: wrap;
   width: 240px;
 }
+
+.questions {
+  display: flex;
+  justify-content: space-between;
+}
