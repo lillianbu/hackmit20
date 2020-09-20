@@ -22,12 +22,12 @@ export default class CandidateDetailedCard extends Component {
           </div>
           <div className="break"></div>
           <a>average position</a>
-          <Slider candLeaning={this.props.avgLean}></Slider>
           <a>left</a>
+          <Slider candLeaning={this.props.avgLean}></Slider>
           {/* <Slider candLeaning={this.props.candLeaning} detailedCard={true}></Slider> */}
-          {console.log(this.props.allQuestions)}
-          {this.props.leanSliders}
+          {/* {console.log(this.props.allQuestions)} */}
           <a>right</a>
+          {this.props.leanSliders}
           <div className="break"></div>
         </div>
         <div className="vl"></div>
