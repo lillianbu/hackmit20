@@ -100,6 +100,23 @@ img {
   border-radius: 25px;
 }
 
+.centered {
+  display: flex;
+  justify-content: center;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  width: 10px; 
+  height: 20px; 
+  /* max-width: 100px; 
+  max-height: 20px; */
+  position: absolute;
+  border-radius: 25px;
+  background: #ffe344;
+}
+
 .left {
   right: 50%; 
   background: #58CDFF;

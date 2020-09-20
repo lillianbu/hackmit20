@@ -8,9 +8,16 @@ class Slider extends Component {
 
     render() {
         const leaning = this.props.candLeaning;
+        if (leaning === 0) console.log(leaning);
+        const side = leaning > 0 ? 'left' : 'right'; 
         return (
-            <div className="rectangle">
-                <div style={{ width: `${Math.abs(leaning)*100 + 'px'}`}} className={`leaning ${leaning > 0 ? 'left' : 'right'}`}></div>
+            <div className={`rectangle ${leaning === 0 ? "centered" : ""}`}>
+                { leaning === 0 
+                    ? (
+                        <div className="center"></div>
+                        ): 
+                    (<div className={`leaning ${side}`} style={{ width: `${Math.abs(leaning)*100 + 'px'}`}} ></div> )
+                }
             </div>
         );
     }

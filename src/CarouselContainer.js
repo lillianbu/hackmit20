@@ -40,7 +40,6 @@ export default class CarouselContainer extends Component {
           total += element[1].total;
       });
 	  const avgLean = this.getLeanScore(leanTotal, total);
-	  console.log("average lean: ", avgLean);
       return avgLean;
   }
 
